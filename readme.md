@@ -63,3 +63,21 @@ docker tag my-image username/my-repo
 
 docker push username/my-repo
 ```
+
+
+### Remove an image
+
+```
+docker rmi -f image-name
+
+```
+
+### Create for  multiple arch
+
+> create a new builder and build with buildx
+
+```
+docker bulildx create --use
+
+docker buildx build --platform linux/amd64,linux/arm64 -t ohidurbappy/flask-deom:latest --push .
+```
