@@ -79,5 +79,5 @@ docker rmi -f image-name
 ```
 docker bulildx create --use
 
-docker buildx build --platform linux/amd64,linux/arm64 -t ohidurbappy/flask-deom:latest --push .
+docker buildx build --platform linux/amd64,linux/arm64 -t ohidurbappy/flask-docker:latest --push .
 ```
